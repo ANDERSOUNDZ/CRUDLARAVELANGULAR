@@ -1,18 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ReelTestComponent } from './reelTest/reelTest.component';
+import { GetUsersComponent } from './get-users/get-users.component';
 
 
 const routes: Routes = [
-  {
-    path: '',
+  { path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    component: ReelTestComponent
-  }
+  { path: 'home', component: GetUsersComponent }
 ];
 
 @NgModule({

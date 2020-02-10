@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ReelTestController extends Controller
+use App\Nombre;
+
+class NombresControllers extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +15,7 @@ class ReelTestController extends Controller
      */
     public function index()
     {
-        return 'Hey';
+    
     }
 
     /**

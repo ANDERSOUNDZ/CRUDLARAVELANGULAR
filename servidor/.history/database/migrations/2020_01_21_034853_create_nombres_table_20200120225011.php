@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateReelTestsTable extends Migration
+class CreateNombresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateReelTestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('reel_tests', function (Blueprint $table) {
+        Schema::create('nombres', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nombretest');
+            $table->string('nombre');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateReelTestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reel_tests');
+        Schema::dropIfExists('nombres');
     }
 }
